@@ -1,11 +1,9 @@
-from _hashlib import openssl_sha1
-
 __author__ = 'Mohammad ali'
 
 
 from tokenize import Tokenize
 
-class Process:
+class Process():
 
 
     def isDigit(self,str):
@@ -63,10 +61,10 @@ class Process:
         nstack=[]
         ostack=[]
         for i in list1:
-            if p.isDigit(i):
+            if self.isDigit(i):
                 nstack.append(i)
             else:
-                if p.checkstack(ostack,i):
+                if self.checkstack(ostack,i):
                     ostack.append(i)
                 else:
                     if i==')':
@@ -74,14 +72,14 @@ class Process:
                             ostack.pop(-1)
                         else:
                             while ostack[-1]!='(':
-                                p.Apply(ostack,nstack)
+                                self.Apply(ostack,nstack)
                             ostack.pop(-1)
                     else:
-                        p.Apply(ostack,nstack)
+                        self.Apply(ostack,nstack)
                         ostack.append(i)
 
         while len(ostack)>0:
-            p.Apply(ostack,nstack)
+            self.Apply(ostack,nstack)
         result='(%s) = %d' %(str,nstack[0])
         return result
 

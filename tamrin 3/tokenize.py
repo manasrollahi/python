@@ -1,7 +1,7 @@
 __author__ = 'Mohammad ali'
 
 
-class Tokenize:
+class Tokenize():
 
     def get_tokens(self,str):
         n=''
