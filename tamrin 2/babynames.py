@@ -6,9 +6,6 @@
 # Google's Python Class
 # http://code.google.com/edu/languages/google-python-class/
 
-import sys
-import re
-
 """Baby Names exercise
 
 Define the extract_names() function below and change main()
@@ -136,8 +133,8 @@ def main():
   #   summary = True
   #   del args[0]
 
-  f1990=open('baby1990.html','rU')
-  # f1992=open('baby1992.html','rU')
+  # f1990=open('baby1990.html','rU')
+  f1992=open('baby1992.html','rU')
   # f1994=open('baby1994.html','rU')
   # f1996=open('baby1996.html','rU')
   # f1998=open('baby1998.html','rU')
@@ -146,16 +143,16 @@ def main():
   # f2004=open('baby2004.html','rU')
   # f2006=open('baby2006.html','rU')
   # f2008=open('baby2008.html','rU')
-  print(extract_names(f1990))
-  # print(namesline(f1992))
-  # print(namesline(f1994))
-  # print(namesline(f1996))
-  # print(namesline(f1998))
-  # print(namesline(f2000))
-  # print(namesline(f2002))
-  # print(namesline(f2004))
-  # print(namesline(f2006))
-  # print(namesline(f2008))
+  # print(extract_names(f1990))
+  print(extract_names(f1992))
+  # print(extract_names(f1994))
+  # print(extract_names(f1996))
+  # print(extract_names(f1998))
+  # print(extract_names(f2000))
+  # print(extract_names(f2002))
+  # print(extract_names(f2004))
+  # print(extract_names(f2006))
+  # print(extract_names(f2008))
 
 
   # +++your code here+++
