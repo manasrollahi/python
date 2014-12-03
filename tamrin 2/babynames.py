@@ -134,8 +134,8 @@ def main():
   #   del args[0]
 
   # f1990=open('baby1990.html','rU')
-  f1992=open('baby1992.html','rU')
-  # f1994=open('baby1994.html','rU')
+  # f1992=open('baby1992.html','rU')
+  f1994=open('baby1994.html','rU')
   # f1996=open('baby1996.html','rU')
   # f1998=open('baby1998.html','rU')
   # f2000=open('baby2000.html','rU')
@@ -144,8 +144,8 @@ def main():
   # f2006=open('baby2006.html','rU')
   # f2008=open('baby2008.html','rU')
   # print(extract_names(f1990))
-  print(extract_names(f1992))
-  # print(extract_names(f1994))
+  # print(extract_names(f1992))
+  print(extract_names(f1994))
   # print(extract_names(f1996))
   # print(extract_names(f1998))
   # print(extract_names(f2000))
