@@ -7,9 +7,9 @@ import math
 def tup(a):
     n=len(a)
     if n==0:
-        return None,None,None
+        return 'avg = %s , mid = %s , enheraf meyar = %s '%(None,None,None)
     elif n==1:
-        return a[0],a[0],None
+        return 'avg = %d , mid = %d , enheraf meyar = %s '%(a[0],a[0],None)
     else:
         avg=sum(a)/n
         if n%2!=0:
@@ -19,7 +19,7 @@ def tup(a):
         a1=[(i-avg)**2 for i in a]
         s=(sum(a1))/(n-1)
         sd=sqrt(s)
-        return avg,mid,sd
+        return 'avg = %d , mid = %d , enheraf meyar = %d '%(avg,mid,sd)
 
 
 def main():

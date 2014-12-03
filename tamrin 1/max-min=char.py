@@ -15,7 +15,7 @@ def mmc(a):
             min=i
         elif dic[i]==dic1[-1]:
             max=i
-    return min,max
+    return 'min = %s , max = %s'%(min,max)
 
 def main():
     print(mmc('akgzmashzssbhrfsbrcraucejcaujmshjgdzjuedjdacrfa'))

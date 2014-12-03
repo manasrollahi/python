@@ -30,7 +30,9 @@ def roud(a):
             dict[ij]+=1
         else:
             dict[ij]=1
-    return list,dict.items()
+    print(list)
+    print(dict.items())
+    return
 
 
 def main():
