@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head><title> نمایش اطلاعات </title>
+<link href='{{ static_url("css/bootstrap.css") }}' rel="stylesheet">
+<link href='{{ static_url("css/bootstrap-theme.css") }}' rel="stylesheet">
+<link href='{{ static_url("css/basic.css") }}' rel="stylesheet">
+
+</head>
+<body dir="rtl">
+<div class="row">&nbsp;</div>
+<div class="row">&nbsp;</div>
+
+<div class="row">
+    <div class="col-md-8 col-md-offset-2 ">
+        <h2 class="Yekan" style="text-align: center; color:#2233dd"> اطلاعات خوانده شده از سایت پویا </h2>
+        <!--<a class="btn btn-lg btn-success Mitra pull-left" href="/category/new">ایجاد گروه جدید</a>-->
+        <br/>      <br/>      <br/>      <br/>      <br/>
+        <h3 class="Yekan" style="text-align: center; color:#2233dd"> جدول تعداد پسران و دختران </h3>
+        <br/>      <br/>      <br/>
+        <table class="table table-striped">
+            <tr>
+                <td> تعداد پسران </td>
+                <td> تعداد دختران </td>
+            </tr>
+            <tr class="Mitra">
+        {% for ch in list1 %}
+        <td> {{ch}} </td>
+        {% end %}
+            </tr>
+       </table>
+        <br/>      <br/>      <br/>      <br/>
+        <h3 class="Yekan" style="text-align: center; color:#2233dd"> جدول موضوعات پر تکرار </h3>
+        <br/>      <br/>      <br/>
+        <table class="table table-striped">
+            <tr>
+                <td> ده موضوع پر تکرار </td>
+            </tr>
+        {% for ch in list2 %}
+            <tr class="Mitra">
+        <td> {{ch}} </td>
+            </tr>
+        {% end %}
+       </table>
+        <br/>      <br/>      <br/><br/>
+        <h3 class="Yekan" style="text-align: center; color:#2233dd"> جدول نام پسران پر تکرار </h3>
+        <br/>      <br/>      <br/>
+        <table class="table table-striped">
+            <tr>
+                <td> ده نام پسر پر تکرار </td>
+            </tr>
+        {% for ch in list3 %}
+            <tr class="Mitra">
+        <td> {{ch}} </td>
+            </tr>
+        {% end %}
+       </table>
+        <br/>      <br/>      <br/>      <br/>
+        <h3 class="Yekan" style="text-align: center; color:#2233dd"> جدول نام دختران پر تکرار </h3>
+        <br/>      <br/>      <br/>
+        <table class="table table-striped">
+            <tr>
+                <td> ده نام دختر پر تکرار </td>
+            </tr>
+        {% for ch in list4 %}
+            <tr class="Mitra">
+        <td> {{ch}} </td>
+            </tr>
+        {% end %}
+       </table>
+        <br/>      <br/>      <br/>      <br/>
+        <h3 class="Yekan" style="text-align: center; color:#2233dd"> اطلاعات سن </h3>
+        <br/>      <br/>      <br/>
+        <table class="table table-striped">
+            <tr>
+                <td> کمترین سن </td>
+                <td> بیشترین سن </td>
+                <td> میانگین سن </td>
+            </tr>
+            <tr class="Mitra">
+                {% for ch in list5 %}
+        <td> {{ch}} </td>
+        {% end %}
+            </tr>
+       </table>
+    </div>
+</div>
+
+<script src="{{static_url('js/jquery.js')}}"></script>
+<script src="{{static_url('js/dropzone.min.js')}}"></script>
+<script src="{{static_url('js/dropzone-amd-module.min.js')}}"></script>
+</body>
+</html>
